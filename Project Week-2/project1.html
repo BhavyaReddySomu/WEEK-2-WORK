@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Learning Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#progress">Progress</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Description</th>
+                        <th>Duration</th>
+                        <th>Materials</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Introduction to HTML</td>
+                        <td>Learn the basics of HTML.</td>
+                        <td>4 hours</td>
+                        <td><a href="materials/html-intro.pdf">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>CSS Fundamentals</td>
+                        <td>Understand CSS for styling web pages.</td>
+                        <td>5 hours</td>
+                        <td><a href="materials/css-fundamentals.pdf">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript Basics</td>
+                        <td>Get started with JavaScript programming.</td>
+                        <td>6 hours</td>
+                        <td><a href="materials/js-basics.pdf">Download</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="quizzes">
+            <h2>Quiz: HTML Basics</h2>
+            <form action="/submit-quiz" method="post">
+                <fieldset>
+                    <legend>Answer the following questions:</legend>
+
+                    <label for="q1">1. What does HTML stand for? 
+                        <input type="text" id="q1" name="q1" required>
+                    </label>
+
+                    <label for="q2">2. Which tag is used to define a paragraph?
+                        <input type="text" id="q2" name="q2" required>
+                    </label>
+
+                    <label for="q3">3. How do you add a comment in HTML? 
+                        <input type="text" id="q3" name="q3" required>
+                    </label>
+
+                    <button type="submit">Submit Quiz</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="progress">
+            <h2>Student Progress</h2>
+            <p>Your progress tracking will be displayed here.</p>
+    
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Learning Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
